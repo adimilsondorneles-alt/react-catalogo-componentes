@@ -1,0 +1,276 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #080d24;
+  color: #e0e7ff;
+}
+
+.pagina {
+  min-height: 100vh;
+}
+
+.cabecalho {
+  background: linear-gradient(135deg, #080d24, #1e3a8a, #6d28d9);
+  color: white;
+  text-align: center;
+  padding: 35px 20px 45px;
+  border-bottom: 2px solid #6366f1;
+  box-shadow: 0 5px 25px #4f46e566;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+.logo span {
+  color: #60a5fa;
+  margin-left: 5px;
+}
+
+.cabecalho h1 {
+  font-size: 36px;
+  margin-bottom: 12px;
+  color: #ffffff;
+  text-shadow: 0 0 18px #818cf8;
+}
+
+.cabecalho p {
+  color: #c7d2fe;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.conteudo {
+  max-width: 1200px;
+  margin: auto;
+  padding: 35px 24px;
+}
+
+.introducao {
+  text-align: center;
+  padding: 25px 10px 40px;
+}
+
+.etiqueta {
+  display: inline-block;
+  color: #c4b5fd;
+  background: linear-gradient(135deg, #172554, #3b0764);
+  border: 1px solid #6366f1;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.introducao h2,
+.titulo-secao h2 {
+  font-size: 27px;
+  margin-bottom: 12px;
+  color: #93c5fd;
+}
+
+.introducao p,
+.titulo-secao p {
+  color: #a5b4fc;
+  line-height: 1.7;
+}
+
+.secao-cursos,
+.secao-destaques {
+  margin-bottom: 55px;
+}
+
+.titulo-secao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 24px;
+}
+
+.contador {
+  background: linear-gradient(135deg, #1d4ed8, #6d28d9);
+  color: white;
+  padding: 10px 14px;
+  border-radius: 20px;
+  font-weight: bold;
+  white-space: nowrap;
+  box-shadow: 0 0 15px #6366f144;
+}
+
+.grade-cursos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.card-curso {
+  background: linear-gradient(145deg, #111b3b, #171638);
+  color: #e0e7ff;
+  border: 1px solid #3730a3;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 5px 18px #00000040;
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.card-curso:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 0 25px #6366f155;
+  border-color: #818cf8;
+}
+
+.icone-curso {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px #6366f144;
+}
+
+.card-curso h3 {
+  font-size: 19px;
+  line-height: 1.4;
+  color: #c4b5fd;
+  margin-bottom: 18px;
+  overflow-wrap: anywhere;
+}
+
+.informacoes {
+  border-top: 1px solid #3730a3;
+  padding-top: 15px;
+}
+
+.informacoes p {
+  color: #cbd5e1;
+  font-size: 14px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.informacoes strong {
+  color: #93c5fd;
+}
+
+.vagas {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.disponivel {
+  background: #172554;
+  color: #93c5fd;
+  border: 1px solid #2563eb;
+}
+
+.completo {
+  background: #2e1065;
+  color: #d8b4fe;
+  border: 1px solid #7c3aed;
+}
+
+.grade-destaques {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.card-destaque {
+  background: linear-gradient(145deg, #111b3b, #171638);
+  color: #e0e7ff;
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid #3730a3;
+  box-shadow: 0 5px 18px #00000030;
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.card-destaque:hover {
+  transform: translateY(-6px);
+  border-color: #818cf8;
+  box-shadow: 0 0 22px #7c3aed44;
+}
+
+.destaque-icone {
+  font-size: 28px;
+  color: #a78bfa;
+  margin-bottom: 14px;
+}
+
+.card-destaque h3 {
+  color: #93c5fd;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.card-destaque p {
+  color: #cbd5e1;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.rodape {
+  background: linear-gradient(135deg, #080d24, #312e81, #4c1d95);
+  color: #c7d2fe;
+  text-align: center;
+  padding: 25px 15px;
+  line-height: 1.9;
+  font-size: 13px;
+  border-top: 2px solid #6366f1;
+}
+
+@media (max-width: 900px) {
+  .grade-cursos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grade-destaques {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .cabecalho h1 {
+    font-size: 28px;
+  }
+
+  .conteudo {
+    padding: 25px 16px;
+  }
+
+  .grade-cursos {
+    grid-template-columns: 1fr;
+  }
+
+  .titulo-secao {
+    align-items: flex-start;
+  }
+
+  .introducao h2,
+  .titulo-secao h2 {
+    font-size: 23px;
+  }
+}
